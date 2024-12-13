@@ -55,3 +55,22 @@ FROM companies
 JOIN employees ON companies.Name = employees.Company
 WHERE employees.Role = 'Graphic Designer';
 
+SELECT Name, Points
+FROM students
+ORDER BY Points DESC
+LIMIT 1;
+
+SELECT AVG(Points) AS Average_Points
+FROM students;
+
+SELECT COUNT(*) AS Number_Of_Students
+FROM students
+WHERE Points = 500;
+
+SELECT Name
+FROM students
+WHERE Name LIKE '%s%';
+
+SELECT Name, Points
+FROM students
+ORDER BY Points DESC;
